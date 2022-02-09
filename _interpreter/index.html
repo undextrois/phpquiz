@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Interpreter - JavaScript Interactive Interpreter</title>
+        <link href="interpreter.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="MochiKit/MochiKit.js"></script>
+        <script type="text/javascript" src="interpreter.js"></script>
+  <style type="text/css">
+.main {
+	FONT-SIZE: 11px; COLOR: #999999; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.button  {
+ border-right: #BCC0C5 1px solid;
+ border-top: #BCC0C5 1px solid;
+ font-size: 11px;
+ border-left: #BCC0C5 1px solid;
+ border-bottom: #BCC0C5 1px solid;
+ color: #5B5B5B;
+ font-family: tahoma;
+ background-color: #E0DFE3
+ }
+.mainblue {
+	FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.titleblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.textbox {
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	font-weight: normal; color: #000000; 
+	text-decoration: none;
+}
+.inputbox {
+	background-color: White; 
+	border: 1px solid #000000; 
+	color: #000000; 
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	text-align: left; 
+	scrollbar-face-color: #CCCCCC; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #FFFFFF; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-arrow-color: #000000 
+}
+</style>
+    </head>
+    <body>
+        
+<h1> webomancer-MOCHIKIT interpreter sim - </h1>
+<h1>JavaScript Interactive Interpreter </h1>
+        <!--
+        <div>
+            <p>
+                This demo is a JavaScript interpreter.  Type some code into
+                the text input and press enter to see the results.  It uses
+                <a href="http://mochikit.com">MochiKit</a>'s
+                <a href="../../doc/html/lib/MochiKit/DOM.html">MochiKit.DOM</a>
+                to manipulate the display.  It also supports waiting for
+                <a href="../../doc/html/lib/MochiKit/Async.html">MochiKit.Async</a>
+                 Deferreds via <tt>blockOn(aDeferred)</tt>.
+            </p>
+        </div>
+
+        <div>
+            View Source: [
+            <a href="index.html" class="view-source">index.html</a> |
+            <a href="interpreter.js" class="view-source">interpreter.js</a>
+            ]
+        </div>-->
+        <form id="interpreter_form">
+            <div id="interpreter_area">
+                <div id="interpreter_output"></div>
+            </div>
+            <input id="interpreter_text" name="input_text" type="text" class="textbox" size="100" />
+        </form>
+        
+<div> <span class="titleblue">Notes: click</span> <a href="../_lessons.php" title="CLICK HERE TO GO BACK ">here</a> 
+  <span class="titleblue">to go back </span> 
+  <ul>
+                
+    <li class="titleblue"> To continue code on the next line, end it with <tt>//</tt> 
+    </li>
+    <li> <span class="titleblue"><tt>function name() {}</tt> syntax might not 
+      end up in window scope, so use <tt>name = function () {}</tt> syntax instead 
+      </span></li>
+    <li class="titleblue"> If you want to stuff something into the output window 
+      other than the <tt>repr(...)</tt> of the expression result, use the <tt>writeln(...)</tt> 
+      function. It accepts anything that MochiKit.DOM does, so you can even put 
+      styled stuff in there! </li>
+    <li class="titleblue"> Use <tt>clear()</tt> to clear the interpreter window. 
+    </li>
+    <li class="titleblue"> You can use <tt>blockOn(aDeferred)</tt> to wait on 
+      a Deferred. This expression must be used by itself, so the value must be 
+      obtained from <tt>_</tt> or <tt>last_exc</tt>. Typing any expression will 
+      cancel the Deferred. </li>
+    <li class="titleblue"> Up and down arrow keys work as a rudimentary history 
+    </li>
+    <li> <span class="titleblue"><tt>_</tt> is the value of the last expression 
+      that was not <tt>undefined</tt>, <tt>last_exc</tt> is the value of the last 
+      unhandled exception</span>. </li>
+            </ul>
+        </div>
+
+    </body>
+</html>
