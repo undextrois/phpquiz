@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>WEBOMANCER</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.main {
+	FONT-SIZE: 11px; COLOR: #999999; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.button  {
+ border-right: #BCC0C5 1px solid;
+ border-top: #BCC0C5 1px solid;
+ font-size: 11px;
+ border-left: #BCC0C5 1px solid;
+ border-bottom: #BCC0C5 1px solid;
+ color: #5B5B5B;
+ font-family: tahoma;
+ background-color: #E0DFE3
+ }
+.mainblue {
+	FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.titleblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.textbox {
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	font-weight: normal; color: #000000; 
+	text-decoration: none;
+}
+.inputbox {
+	background-color: White; 
+	border: 1px solid #000000; 
+	color: #000000; 
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	text-align: left; 
+	scrollbar-face-color: #CCCCCC; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #FFFFFF; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-arrow-color: #000000 
+}
+</style>
+ <SCRIPT language="JavaScript">
+  function dateTime()
+{
+ var now = new Date()
+ var result = now.toLocaleString()
+ var tzOffset=-now.getTimezoneOffset()/60
+ if(tzOffset<0) result += " (GMT "+tzOffset+" hours)"
+ else result += " (GMT +"+tzOffset+" hours)"
+ return result
+}
+function tick()
+ {
+ document.forms[0].clock.value=dateTime()
+ setTimeout("tick()",1000)
+}
+  </SCRIPT>
+</head>
+
+<body>
+<br>
+<table width="95%" height="47" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td width="16" height="16" valign="top"> <img src="_images/im_left_01.gif" width="16" height="16" alt=""></td>
+    <td width="1136" background="_images/bg_top.gif"></td>
+    <td width="19" valign="top"> <img src="_images/im_left_03.gif" width="19" height="16" alt=""></td>
+  </tr>
+  <tr>
+    <td background="_images/bg_left.gif"> </td>
+    <td valign="top" bgcolor="#FFFFFF">
+      <table width="98%"  border="0" cellspacing="0" cellpadding="1">
+        <!--DWLayoutTable-->
+        <tr bgcolor="#FFFFFF"> 
+          <td width="290" class="label"><b></b></td>
+          <td width="402" align="right" class="label">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="21" valign="top"><strong><font color="#FF0000" face="Verdana, Arial, Helvetica, sans-serif">{_membername}</font></strong></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td colspan="2"> <form name="form1" method="post" action="" >
+              <input name="clock" type="text" class="inputbox" value="&{dateTime()};" size="60">
+            </form>
+            <div align="center"></div></td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="21" colspan="2"> 
+            <script language="JavaScript">
+tick()
+</script>
+            <span class="mainblue"><strong><a href="_members.php" title="Member Home">HOME</a></strong> 
+            |<a href="_lessons.php" title="Study"> <strong>LESSONS</strong></a> 
+            |<strong><a href="_logout.php" title="Logout">LOGOUT</a></strong> 
+            |</span> <a href="_contents.php?lesson_id_PK={_lesson_id_PK}&modidPK={modidPK}&type={type}&bw_level={bw_level}" class="titleblue">CONTENTS</a> </td>
+	
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="21" colspan="2" class="titleblue"><p>&nbsp;</p>
+            <table width="93%" border="1" align="center">
+              <tr> 
+                <td width="47%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="27">LESSON TITLE</td>
+                <td>OPTION</td>
+              </tr>
+              <!-- BEGIN WCMemberListingBlock -->
+              <tr> 
+                <td>{LESSON_TITLE}</td>
+                <td>{URL_EXAM}</td>
+              </tr>
+              <!-- END WCMemberListingBlock -->
+            </table></td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="42" colspan="2" valign="top" bgcolor="#FFFFFF" class="textsub"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+            <br>
+            </font> <p>&nbsp;</p></td>
+        </tr>
+<!--
+        <tr bgcolor="#FBFBFB"> 
+          <td height="25" class="textsub">&nbsp;</td>
+          <td height="25" class="textsub">&nbsp;</td>
+        </tr>
+-->
+        <tr bgcolor="white"> 
+          <td>&nbsp;</td>
+          <td bgcolor="white">&nbsp;</td>
+        </tr>
+        
+        <tr bgcolor="white"> 
+          <td><!--DWLayoutEmptyCell-->&nbsp;</td>
+          <td bgcolor="white"><!--DWLayoutEmptyCell-->&nbsp; </td>
+        </tr>
+
+      </table>
+    </td>
+    <td background="_images/bg_right.gif"></td>
+  </tr>
+  <tr>
+    <td height="16" valign="top"> <img src="_images/im_left_07.gif" width="16" height="16" alt=""></td>
+    <td background="_images/bg_bottom.gif" bgcolor="#EEEEEE"></td>
+    <td valign="top"> <img src="_images/im_left_09.gif" width="19" height="16" alt=""></td>
+  </tr>
+<input type="hidden" value="{_lesson_id_PK}" id="_lesson_id_PK" name="_lesson_id_PK">
+<input type="hidden" value="{modidPK}" id="modidPK" name="modidPK">
+
+</table>
+</body>
+</html>

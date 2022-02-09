@@ -1,0 +1,360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Member Only</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.main {
+	FONT-SIZE: 11px; COLOR: #999999; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.button  {
+ border-right: #BCC0C5 1px solid;
+ border-top: #BCC0C5 1px solid;
+ font-size: 11px;
+ border-left: #BCC0C5 1px solid;
+ border-bottom: #BCC0C5 1px solid;
+ color: #5B5B5B;
+ font-family: tahoma;
+ background-color: #E0DFE3
+ }
+.mainblue {
+	FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.titleblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.textbox {
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	font-weight: normal; color: #000000; 
+	text-decoration: none;
+}
+.inputbox {
+	background-color: White; 
+	border: 1px solid #000000; 
+	color: #000000; 
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	text-align: left; 
+	scrollbar-face-color: #CCCCCC; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #FFFFFF; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-arrow-color: #000000 
+}
+</style>
+ <SCRIPT language="JavaScript">
+  function dateTime()
+{
+ var now = new Date()
+ var result = now.toLocaleString()
+ var tzOffset=-now.getTimezoneOffset()/60
+ if(tzOffset<0) result += " (GMT "+tzOffset+" hours)"
+ else result += " (GMT +"+tzOffset+" hours)"
+ return result
+}
+function tick()
+ {
+ document.forms[0].clock.value=dateTime()
+ setTimeout("tick()",1000)
+}
+  </SCRIPT>
+</head>
+
+<body>
+<br>
+<table width="95%" height="47" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td width="16" height="16" valign="top"> <img src="_images/im_left_01.gif" width="16" height="16" alt=""></td>
+    <td width="1136" background="_images/bg_top.gif"></td>
+    <td width="19" valign="top"> <img src="_images/im_left_03.gif" width="19" height="16" alt=""></td>
+  </tr>
+  <tr>
+    <td background="_images/bg_left.gif"> </td>
+    <td valign="top" bgcolor="#FFFFFF">
+      <table width="98%"  border="0" cellspacing="0" cellpadding="1">
+        <!--DWLayoutTable-->
+        <tr bgcolor="#FFFFFF"> 
+          <td width="290" class="label"><b><font face="Arial, Helvetica, sans-serif">WEBOMANCER</font></b></td>
+          <td width="402" align="right" class="label">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="21" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif">Welcome</font> 
+            <strong><font color="#FF0000" face="Verdana, Arial, Helvetica, sans-serif">{_membername}</font></strong></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td colspan="2"> <form name="form1" method="post" action="" >
+              <input name="clock" type="text" class="TextAreaNoBorder" value="&{dateTime()};" size="60">
+            </form>
+            <div align="center"> 
+              <SCRIPT LANGUAGE="JavaScript">
+tick()
+</SCRIPT>
+              <span class="mainblue"><strong><a href="_members.php">HOME</a></strong> 
+              |<a href="_lessons.php"> <strong>LESSONS</strong></a> | <strong>QUIZZES</strong> 
+              |<strong> HISTORY</strong> |<strong> <a href="_logout.php">LOGOUT</a></strong> 
+              |</span></div></td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="21" colspan="2">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white">
+          <td height="42" colspan="2" valign="top" bgcolor="#FFFFFF" class="textsub"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+            <strong>LEVEL 1</strong><br>
+            <strong>*Introduction to ASP</strong><br>
+            An ASP file can contain text, HTML tags and scripts. Scripts in an 
+            ASP file are executed on the server<br>
+            ________________________________________<br>
+            <strong>What you should already know</strong><br>
+            Before you continue you should have some basic understanding of the 
+            following:<br>
+            &#8226; WWW, HTML and the basics of building Web pages <br>
+            &#8226; A scripting language like JavaScript or VBScript <br>
+            ________________________________________<br>
+            <strong>What is ASP?</strong><br>
+            &#8226; ASP stands for Active Server Pages <br>
+            &#8226; ASP is a program that runs inside IIS <br>
+            &#8226; IIS stands for Internet Information Services <br>
+            &#8226; IIS comes as a free component with Windows 2000 <br>
+            &#8226; IIS is also a part of the Windows NT 4.0 Option Pack <br>
+            &#8226; The Option Pack can be downloaded from Microsoft <br>
+            &#8226; PWS is a smaller - but fully functional - version of IIS <br>
+            &#8226; PWS can be found on your Windows 95/98 CD <br>
+            ASP Compatibility<br>
+            &#8226; ASP is a Microsoft Technology <br>
+            &#8226; To run IIS you must have Windows NT 4.0 or later <br>
+            &#8226; To run PWS you must have Windows 95 or later <br>
+            &#8226; ChiliASP is a technology that runs ASP without Windows OS 
+            <br>
+            &#8226; InstantASP is another technology that runs ASP without Windows 
+            <br>
+            What is an ASP File?<br>
+            &#8226; An ASP file is just the same as an HTML file <br>
+            &#8226; An ASP file can contain text, HTML, XML, and scripts <br>
+            &#8226; Scripts in an ASP file are executed on the server <br>
+            &#8226; An ASP file has the file extension &quot;.asp&quot; <br>
+            How Does ASP Differ from HTML?<br>
+            &#8226; When a browser requests an HTML file, the server returns the 
+            file <br>
+            &#8226; When a browser requests an ASP file, IIS passes the request 
+            to the ASP engine. The ASP engine reads the ASP file, line by line, 
+            and executes the scripts in the file. Finally, the ASP file is returned 
+            to the browser as plain HTML <br>
+            ________________________________________<br>
+            <strong>What can ASP do for you?</strong><br>
+            &#8226; Dynamically edit, change or add any content of a Web page 
+            <br>
+            &#8226; Respond to user queries or data submitted from HTML forms 
+            <br>
+            &#8226; Access any data or databases and return the results to a browser 
+            <br>
+            &#8226; Customize a Web page to make it more useful for individual 
+            users <br>
+            &#8226; The advantages of using ASP instead of CGI and Perl, are those 
+            of simplicity and speed <br>
+            &#8226; Provides security since your ASP code can not be viewed from 
+            the browser <br>
+            &#8226; Since ASP files are returned as plain HTML, they can be viewed 
+            in any browser <br>
+            &#8226; Clever ASP programming can minimize the network traffic <br>
+            *Run ASP on Your PC<br>
+            You can run ASP on your own PC without an external server. To do that, 
+            you must install Microsoft's Personal Web Server (PWS) or Internet 
+            Information Services (IIS) on your PC.<br>
+            ________________________________________<br>
+            <strong>How to Run ASP on your own PC</strong><br>
+            You can run ASP on your own PC without an external server. To do that, 
+            you must install Microsoft's Personal Web Server (PWS) or Internet 
+            Information Services (IIS) on your PC.<br>
+            If you are serious about using ASP, you should have at least Windows 
+            98, Second Edition. <br>
+            If you are really serious about using ASP, you should go for Windows 
+            2000.<br>
+            ________________________________________<br>
+            <strong>How to install PWS and run ASP on Windows 95</strong><br>
+            Personal Web Server (PWS) is not shipped with Windows 95 !!<br>
+            To run ASP on Windows 95, you will have to download &quot;Windows 
+            NT 4.0 Option Pack&quot; from Microsoft.<br>
+            ________________________________________<br>
+            <strong>How to install PWS and run ASP on Windows NT</strong><br>
+            Personal Web Server (PWS) is not shipped with Windows NT !!<br>
+            To run ASP on Windows NT, you will have to download &quot;Windows 
+            NT 4.0 Option Pack&quot; from Microsoft.<br>
+            ________________________________________<br>
+            <strong>How to install PWS and run ASP on Windows 98</strong><br>
+            1. Open the Add-ons folder on your Windows98 CD, find the PWS folder 
+            and run the setup.exe file. <br>
+            2. An Inetpub folder will be created on your harddrive. Open it and 
+            find the wwwroot folder. <br>
+            3. Create a new folder, like &quot;MyWeb&quot;, under wwwroot. <br>
+            4. Use a text editor to write some ASP code, save the file as &quot;test1.asp&quot; 
+            in the &quot;MyWeb&quot; folder. <br>
+            5. Make sure your Web server is running - The installation program 
+            has added a new icon on your task bar (this is the PWS symbol). Click 
+            on the icon and press the Start button in the window that appears. 
+            <br>
+            6. Open your browser and type in &quot;http://localhost/MyWeb/test1.asp&quot;, 
+            to view your first ASP page. <br>
+            ________________________________________<br>
+            <strong>How to install PWS and run ASP on Windows ME</strong><br>
+            Personal Web Server (PWS) is not included with Windows Me !!<br>
+            ________________________________________<br>
+            <strong>How to install IIS and run ASP on Windows 2000</strong><br>
+            1. From your Start Button, go to Settings, and Control Panel <br>
+            2. In the Control Panel window select Add/Remove Programs <br>
+            3. In the Add/Remove window select Add/Remove Windows Components <br>
+            4. In the Wizard window check Internet Information Services, click 
+            OK <br>
+            5. An Inetpub folder will be created on your harddrive <br>
+            6. Open the Inetpub folder, and find a folder named wwwroot <br>
+            7. Create a new folder, like &quot;MyWeb&quot;, under wwwroot. <br>
+            8. Use a text editor to write some ASP code, save the file as &quot;test1.asp&quot; 
+            in the &quot;MyWeb&quot; folder <br>
+            9. Make sure your Web server is running - The installation program 
+            has added a new icon on your task bar (this is the IIS symbol). Click 
+            on the icon and press the Start button in the window that appears. 
+            <br>
+            10. Open your browser and type in &quot;http://localhost/MyWeb/test1.asp&quot;, 
+            to view your first ASP page <br>
+            ________________________________________<br>
+            <strong>How to install IIS and run ASP on Windows XP Professional</strong><br>
+            Note: You cannot run ASP on Windows XP Home Edition.<br>
+            1. Insert the Windows XP Professional CD-Rom into your CD-Rom Drive 
+            <br>
+            2. From your Start Button, go to Settings, and Control Panel <br>
+            3. In the Control Panel window select Add/Remove Programs <br>
+            4. In the Add/Remove window select Add/Remove Windows Components <br>
+            5. In the Wizard window check Internet Information Services, click 
+            OK <br>
+            6. An Inetpub folder will be created on your harddrive <br>
+            7. Open the Inetpub folder, and find a folder named wwwroot <br>
+            8. Create a new folder, like &quot;MyWeb&quot;, under wwwroot. <br>
+            9. Use a text editor to write some ASP code, save the file as &quot;test1.asp&quot; 
+            in the &quot;MyWeb&quot; folder <br>
+            10. Make sure your Web server is running - its status can be checked 
+            by going into the Control Panel, then Administrative Tools, and double-click 
+            the &quot;IIS Manager&quot; icon <br>
+            11. Open your browser and type in &quot;http://localhost/MyWeb/test1.asp&quot;, 
+            to view your first ASP page <br>
+            ________________________________________<br>
+            <strong>How to install IIS and run ASP on Windows Server 2003 (Windows 
+            .NET Server)</strong><br>
+            1. When you start the Windows Server 2003, you should see the Manage 
+            Your Server wizard <br>
+            2. If the wizard is not displayed, go to Administrative Tools, and 
+            select Manage Your Server <br>
+            3. In the wizard, click Add or Remove a Role, click Next <br>
+            4. Select Custom Configuration, click Next <br>
+            5. Select Application Server role, click Next <br>
+            6. Select Enable ASP.NET, click Next <br>
+            7. Now, the wizard may ask for the Server 2003 CD. Insert the CD and 
+            let it run until it is finished, then click the Finish button <br>
+            8. The wizard should now show the Application Server role installed 
+            <br>
+            9. Click on Manage This Application Server to bring up the Application 
+            Server Management Console (MMC) <br>
+            10. Expand the Internet Information Services (IIS) Manager, then expand 
+            your server, and then the Web Sites folder <br>
+            11. You should see the Default Web Site, and it should not say (Stopped) 
+            <br>
+            12. IIS is running! <br>
+            13. In the Internet Information Services (IIS) Manager click on the 
+            Web Service Extensions folder <br>
+            14. Here you will see that Active Server Pages are Prohibited (this 
+            is the default configuration of IIS 6) <br>
+            15. Highlight Active Server Pages and click the Allow button <br>
+            16. ASP is now active! <br>
+            *ASP Syntax<br>
+            You cannot view the ASP source code by selecting &quot;View source&quot; 
+            in a browser, you will only see the output from the ASP file, which 
+            is plain HTML. This is because the scripts are executed on the server 
+            before the result is sent back to the browser.<br>
+            In our ASP tutorial, every example displays the hidden ASP source 
+            code. This will make it easier for you to understand how it works.<br>
+            The Basic Syntax Rule <br>
+            An ASP file normally contains HTML tags, just like an HTML file. However, 
+            an ASP file can also contain server scripts, surrounded by the delimiters 
+            &lt;% and %&gt;. Server scripts are executed on the server, and can 
+            contain any expressions, statements, procedures, or operators valid 
+            for the scripting language you prefer to use. <br>
+            ________________________________________<br>
+            <strong>The Response Object </strong><br>
+            The Write method of the ASP Response Object is used to send content 
+            to the browser. For example, the following statement sends the text 
+            &quot;Hello World&quot; to the browser:<br>
+            &lt;%<br>
+            response.write(&quot;Hello World!&quot;)<br>
+            %&gt; </font>
+            <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">________________________________________<br>
+              <strong>VBScript</strong><br>
+              You may use different scripting languages in ASP files. However, 
+              the default scripting language is VBScript:<br>
+              &lt;html&gt;<br>
+              &lt;body&gt;<br>
+              &lt;%<br>
+              response.write(&quot;Hello World!&quot;)<br>
+              %&gt;<br>
+              &lt;/body&gt;<br>
+              &lt;/html&gt;<br>
+              The example above writes &quot;Hello World!&quot; into the body 
+              of the document. <br>
+              ________________________________________<br>
+              <strong>JavaScript </strong><br>
+              To set JavaScript as the default scripting language for a particular 
+              page you must insert a language specification at the top of the 
+              page:<br>
+              &lt;%@ language=&quot;javascript&quot;%&gt;<br>
+              &lt;html&gt;<br>
+              &lt;body&gt;<br>
+              &lt;%<br>
+              Response.Write(&quot;Hello World!&quot;)<br>
+              %&gt;<br>
+              &lt;/body&gt;<br>
+              &lt;/html&gt;<br>
+              Note: Unlike VBScript - JavaScript is case sensitive. You will have 
+              to write your ASP code with uppercase letters and lowercase letters 
+              when the language requires it. <br>
+              ________________________________________<br>
+              <strong>Other Scripting Languages </strong><br>
+              ASP is shipped with VBScript and JScript (Microsoft's implementation 
+              of JavaScript). If you want to script in another language, like 
+              PERL, REXX, or Python, you will have to install script engines for 
+              them.<br>
+              Important: Because the scripts are executed on the server, the browser 
+              that displays the ASP file does not need to support scripting at 
+              all!</font><br>
+            </p>
+            <p>&nbsp;</p></td>
+        </tr>
+        <tr bgcolor="#FBFBFB"> 
+          <td height="25" class="textsub"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          <td height="25" class="textsub"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+            LEVEL 1 | <a href="_lesson_asp2.php">LEVEL 2</a> | LEVEL 3 | LEVEL 
+            4 |</font></td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td>&nbsp;</td>
+          <td bgcolor="white">&nbsp;</td>
+        </tr>
+        <!-- BEGIN MODULEGROUP_BLOCK -->
+        <tr bgcolor="white"> 
+          <td><!--DWLayoutEmptyCell-->&nbsp;</td>
+          <td bgcolor="white"><!--DWLayoutEmptyCell-->&nbsp; </td>
+        </tr>
+        <!-- END MODULEGROUP_BLOCK -->
+      </table>
+    </td>
+    <td background="_images/bg_right.gif"></td>
+  </tr>
+  <tr>
+    <td height="16" valign="top"> <img src="_images/im_left_07.gif" width="16" height="16" alt=""></td>
+    <td background="_images/bg_bottom.gif" bgcolor="#EEEEEE"></td>
+    <td valign="top"> <img src="_images/im_left_09.gif" width="19" height="16" alt=""></td>
+  </tr>
+</table>
+</body>
+</html>

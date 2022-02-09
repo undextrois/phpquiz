@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>cpanel - member account</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.main {
+	FONT-SIZE: 11px; COLOR: #999999; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.button  {
+ border-right: #BCC0C5 1px solid;
+ border-top: #BCC0C5 1px solid;
+ font-size: 11px;
+ border-left: #BCC0C5 1px solid;
+ border-bottom: #BCC0C5 1px solid;
+ color: #5B5B5B;
+ font-family: tahoma;
+ background-color: #E0DFE3
+ }
+.mainblue {
+	FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.titleblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.textbox {
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	font-weight: normal; color: #000000; 
+	text-decoration: none;
+}
+.inputbox {
+	background-color: White; 
+	border: 1px solid #000000; 
+	color: #000000; 
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	text-align: left; 
+	scrollbar-face-color: #CCCCCC; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #FFFFFF; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-arrow-color: #000000 
+}
+</style>
+</head>
+
+<body>
+<br>
+  <FORM ACTION="_quiz_edit_question.php" METHOD="POST" name="frmEditUser">
+<table width="95%" height="47" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td width="16" height="16" valign="top"> <img src="_images/im_left_01.gif" width="16" height="16" alt=""></td>
+    <td width="1136" background="_images/bg_top.gif"></td>
+    <td width="19" valign="top"> <img src="_images/im_left_03.gif" width="19" height="16" alt=""></td>
+  </tr>
+  <tr>
+    <td background="_images/bg_left.gif"> </td>
+    <td valign="top" bgcolor="#FFFFFF">
+      <table width="100%"  border="0" cellspacing="0" cellpadding="1">
+          <tr bgcolor="#FFFFFF"> 
+            <td colspan="3" class="titleblue"><b> QUIZ MANAGER</b></td>
+          </tr>
+          <tr bgcolor="white"> 
+            <td colspan="3" class="titleblue"><a href="_quizlist.php?modidPK={modidPK}&quizidPK={quizidPK}&action=lessons">[HOME]</a></td>
+          </tr>
+          <tr bgcolor="#FBFBFB"> 
+            <td height="22" colspan="3" bgcolor="#FFFFFF" class="regular">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td width="12%" height="20" bgcolor="#FFFFFF" class="titleblue"> Question</td>
+            <td width="21%" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td width="88%" bgcolor="#FFFFFF" class="regular"><input name="questions_questions" type="text" id="questions_questions " class="inputbox" value="{questions_questions}"></td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">Possible Answers</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">A</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular"><input name="A" type="text" id="A" class="inputbox" value="{A}"></td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">B</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular"><input name="B" type="text" id="B" class="inputbox" value="{B}"></td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">C</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="titleblue"> <input name="C" type="text" id="_answerC" class="inputbox" value="{C}"> 
+            </td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">D</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular"><input name="D" type="text" id="D" class="inputbox" value="{D}"></td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">Correct Answer</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular"><input name="ra_realanswer" type="text" id="D2" class="inputbox" value="{ra_realanswer}">
+              <span class="titleblue">YOU CAN CHOOSE BETWEEN A,B,C OR D</span></td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular">&nbsp;</td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular"><input name="Submit" type="submit" class="button" value="Update Quiz Question"></td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" bgcolor="#FFFFFF" class="titleblue">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF" class="textcontent1">:</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular">
+		<input type="hidden" name="pa_id_PK" value="{pa_id_PK}"> 
+			<input type="hidden" name="pa_id_FK" value="{pa_id_FK}"> 
+			<input type="hidden" name="question_id_PK" value="{question_id_PK}"> 
+			<input type="hidden" name="quizidPK" value="{quizidPK}"> 
+              <input type="hidden" name="modidPK" value="{modidPK}"></td>
+          </tr>
+          <tr bgcolor="#FBFBFB" class="regular"> 
+            <td height="20" colspan="2" bgcolor="#FFFFFF" class="regular">&nbsp;</td>
+            <td height="20" bgcolor="#FFFFFF" class="regular">&nbsp; </td>
+          </tr>
+          <!-- BEGIN BLOCK -->
+          <!-- END BLOCK -->
+        </table>      
+    </td>
+    <td background="_images/bg_right.gif"></td>
+  </tr>
+  <tr>
+    <td height="16" valign="top"> <img src="_images/im_left_07.gif" width="16" height="16" alt=""></td>
+    <td background="_images/bg_bottom.gif" bgcolor="#EEEEEE"></td>
+    <td valign="top"> <img src="_images/im_left_09.gif" width="19" height="16" alt=""></td>
+  </tr>
+</table>
+          <input type="hidden" name="action" value="update_question">
+</form>
+</body>
+</html>

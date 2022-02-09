@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+@import url("../html/main.css");
+body {
+	background-color: #EEEEEE;
+	margin-top: 0px;
+}
+-->
+</style>
+ <SCRIPT language="JavaScript">
+  function dateTime()
+{
+ var now = new Date()
+ var result = now.toLocaleString()
+ var tzOffset=-now.getTimezoneOffset()/60
+ if(tzOffset<0) result += " (GMT "+tzOffset+" hours)"
+ else result += " (GMT +"+tzOffset+" hours)"
+ return result
+}
+function tick()
+ {
+ document.forms[0].clock.value=dateTime()
+ setTimeout("tick()",1000)
+}
+  </SCRIPT>
+</head>
+
+<body>
+<br>
+<table width="95%" height="47" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td width="16" height="16" valign="top"> <img src="../_images/im_left_01.gif" width="16" height="16" alt=""></td>
+    <td width="1136" background="../_images/bg_top.gif"></td>
+    <td width="19" valign="top"> <img src="../_images/im_left_03.gif" width="19" height="16" alt=""></td>
+  </tr>
+  <tr>
+    <td background="../_images/bg_left.gif"> </td>
+    <td valign="top" bgcolor="#FFFFFF">
+      <table width="98%"  border="0" cellspacing="0" cellpadding="1">
+        <!--DWLayoutTable-->
+        <tr bgcolor="#FFFFFF">
+          <td width="425" class="label"><b>Module List </b></td>
+          <td width="588" align="right" class="label">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white">
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white">
+          <td colspan="2"> <form name="form1" method="post" action="" >
+              <input name="clock" type="text" class="TextAreaNoBorder" value="&{dateTime()};" size="60">
+            </form>
+            <SCRIPT LANGUAGE="JavaScript">
+tick()
+</SCRIPT> </td>
+        </tr>
+        <tr bgcolor="white">
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FBFBFB">
+          <td height="20" colspan="2" bgcolor="#FFFFFF" class="textsub"><a href="_su_addmodulegroup.php" class="submod">Add
+            Module</a> </td>
+        </tr>
+        <tr bgcolor="#FBFBFB">
+          <td height="20" colspan="2" bgcolor="#FFFFFF" class="textsub">&nbsp;</td>
+        </tr>
+        <tr bgcolor="#FBFBFB">
+          <td height="25" class="textsub">Module Group </td>
+          <td height="25" class="textsub">Options</td>
+        </tr>
+        <tr bgcolor="white">
+          <td>&nbsp;</td>
+          <td bgcolor="white">&nbsp;</td>
+        </tr>
+        <!-- BEGIN MODULEGROUP_BLOCK -->
+        <tr bgcolor="white">
+          <td>{module_name}</td>
+          <td bgcolor="white"><a href="_su_editmodgroup.php?module_type_id={module_type_id}" class="linkmail">Edit</a>
+            &nbsp;|&nbsp; <a href="_su_delgroup.php?module_type_id={module_type_id} "class="linkmail" >Delete</a>
+            &nbsp;|&nbsp; <a href="_su_viewgroup.php?module_type={module_type}" class="linkmail">View</a>
+          </td>
+        </tr>
+        <!-- END MODULEGROUP_BLOCK -->
+      </table>
+    </td>
+    <td background="../_images/bg_right.gif"></td>
+  </tr>
+  <tr>
+    <td height="16" valign="top"> <img src="../_images/im_left_07.gif" width="16" height="16" alt=""></td>
+    <td background="../_images/bg_bottom.gif" bgcolor="#EEEEEE"></td>
+    <td valign="top"> <img src="../_images/im_left_09.gif" width="19" height="16" alt=""></td>
+  </tr>
+</table>
+</body>
+</html>

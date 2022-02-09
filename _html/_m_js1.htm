@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Member Only</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.main {
+	FONT-SIZE: 11px; COLOR: #999999; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.button  {
+ border-right: #BCC0C5 1px solid;
+ border-top: #BCC0C5 1px solid;
+ font-size: 11px;
+ border-left: #BCC0C5 1px solid;
+ border-bottom: #BCC0C5 1px solid;
+ color: #5B5B5B;
+ font-family: tahoma;
+ background-color: #E0DFE3
+ }
+.mainblue {
+	FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.titleblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.textbox {
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	font-weight: normal; color: #000000; 
+	text-decoration: none;
+}
+.inputbox {
+	background-color: White; 
+	border: 1px solid #000000; 
+	color: #000000; 
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	text-align: left; 
+	scrollbar-face-color: #CCCCCC; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #FFFFFF; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-arrow-color: #000000 
+}
+</style>
+ <SCRIPT language="JavaScript">
+  function dateTime()
+{
+ var now = new Date()
+ var result = now.toLocaleString()
+ var tzOffset=-now.getTimezoneOffset()/60
+ if(tzOffset<0) result += " (GMT "+tzOffset+" hours)"
+ else result += " (GMT +"+tzOffset+" hours)"
+ return result
+}
+function tick()
+ {
+ document.forms[0].clock.value=dateTime()
+ setTimeout("tick()",1000)
+}
+  </SCRIPT>
+</head>
+
+<body>
+<br>
+<table width="95%" height="47" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td width="16" height="16" valign="top"> <img src="_images/im_left_01.gif" width="16" height="16" alt=""></td>
+    <td width="1136" background="_images/bg_top.gif"></td>
+    <td width="19" valign="top"> <img src="_images/im_left_03.gif" width="19" height="16" alt=""></td>
+  </tr>
+  <tr>
+    <td background="_images/bg_left.gif"> </td>
+    <td valign="top" bgcolor="#FFFFFF">
+      <table width="98%"  border="0" cellspacing="0" cellpadding="1">
+        <!--DWLayoutTable-->
+        <tr bgcolor="#FFFFFF"> 
+          <td width="290" class="label"><b><font face="Arial, Helvetica, sans-serif">WEBOMANCER</font></b></td>
+          <td width="402" align="right" class="label">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="21" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif">Welcome</font> 
+            <strong><font color="#FF0000" face="Verdana, Arial, Helvetica, sans-serif">{_membername}</font></strong></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td colspan="2"> <form name="form1" method="post" action="" >
+              <input name="clock" type="text" class="TextAreaNoBorder" value="&{dateTime()};" size="60">
+            </form>
+            <div align="center"> 
+              <SCRIPT LANGUAGE="JavaScript">
+tick()
+</SCRIPT>
+              <span class="mainblue"><strong><a href="_members.php">HOME</a></strong> 
+              |<a href="_lessons.php"> <strong>LESSONS</strong></a> | <strong>QUIZZES</strong> 
+              |<strong> HISTORY</strong> |<strong> <a href="_logout.php">LOGOUT</a></strong> 
+              |</span></div></td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td height="21" colspan="2">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white">
+          <td height="42" colspan="2" valign="top" bgcolor="#FFFFFF" class="textsub"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+            <strong>LEVEL 1<br>
+            *Introduction to JavaScript</strong><br>
+            JavaScript is used in millions of Web pages to improve the design, 
+            validate forms, detect browsers, create cookies, and much more.<br>
+            JavaScript is the most popular scripting language on the internet, 
+            and works in all major browsers, such as Internet Explorer, Mozilla, 
+            Firefox, Netscape, Opera.<br>
+            ________________________________________<br>
+            <strong>What You Should Already Know</strong><br>
+            Before you continue you should have a basic understanding of the following:<br>
+            &#8226; HTML / XHTML <br>
+            ________________________________________<br>
+            <strong>What is JavaScript?</strong><br>
+            &#8226; JavaScript was designed to add interactivity to HTML pages 
+            <br>
+            &#8226; JavaScript is a scripting language (a scripting language is 
+            a lightweight programming language) <br>
+            &#8226; A JavaScript consists of lines of executable computer code 
+            <br>
+            &#8226; A JavaScript is usually embedded directly into HTML pages 
+            <br>
+            &#8226; JavaScript is an interpreted language (means that scripts 
+            execute without preliminary compilation) <br>
+            &#8226; Everyone can use JavaScript without purchasing a license <br>
+            ________________________________________<br>
+            <strong>What can a JavaScript Do?</strong><br>
+            &#8226; JavaScript gives HTML designers a programming tool - HTML 
+            authors are normally not programmers, but JavaScript is a scripting 
+            language with a very simple syntax! Almost anyone can put small &quot;snippets&quot; 
+            of code into their HTML pages <br>
+            &#8226; JavaScript can put dynamic text into an HTML page - A JavaScript 
+            statement like this: document.write(&quot;&lt;h1&gt;&quot; + name 
+            + &quot;&lt;/h1&gt;&quot;) can write a variable text into an HTML 
+            page <br>
+            &#8226; JavaScript can react to events - A JavaScript can be set to 
+            execute when something happens, like when a page has finished loading 
+            or when a user clicks on an HTML element <br>
+            &#8226; JavaScript can read and write HTML elements - A JavaScript 
+            can read and change the content of an HTML element <br>
+            &#8226; JavaScript can be used to validate data - A JavaScript can 
+            be used to validate form data before it is submitted to a server, 
+            this will save the server from extra processing <br>
+            &#8226; JavaScript can be used to detect the visitor's browser - A 
+            JavaScript can be used to detect the visitor's browser, and - depending 
+            on the browser - load another page specifically designed for that 
+            browser <br>
+            &#8226; JavaScript can be used to create cookies - A JavaScript can 
+            be used to store and retrieve information on the visitor's computer 
+            <br>
+            *JavaScript How To ...<br>
+            The HTML &lt;script&gt; tag is used to insert a JavaScript into an 
+            HTML page.<br>
+            How to Put a JavaScript Into an HTML Page<br>
+            &lt;html&gt;<br>
+            &lt;body&gt;<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            document.write(&quot;Welcome to JavaScript!&quot;)<br>
+            &lt;/script&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+            The code above will produce this output on an HTML page:<br>
+            Welcome to JavaScript! <br>
+            Example Explained<br>
+            To insert a JavaScript into an HTML page, we use the &lt;script&gt; 
+            tag (also use the type attribute to define the scripting language).<br>
+            So, the &lt;script type=&quot;text/javascript&quot;&gt; and &lt;/script&gt; 
+            tells where the JavaScript starts and ends:<br>
+            &lt;html&gt;<br>
+            &lt;body&gt;<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            ...<br>
+            &lt;/script&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+            The word document.write is a standard JavaScript command for writing 
+            output to a page.<br>
+            By entering the document.write command between the &lt;script type=&quot;text/javascript&quot;&gt; 
+            and &lt;/script&gt; tags, the browser will recognize it as a JavaScript 
+            command and execute the code line. In this case the browser will write 
+            Welcome to JavaScript! to the page:<br>
+            &lt;html&gt;<br>
+            &lt;body&gt;<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            document.write(&quot;Welcome to JavaScript!&quot;)<br>
+            &lt;/script&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+            Note: If we had not entered the &lt;script&gt; tag, the browser would 
+            have treated the document.write(&quot;Welcome to JavaScript!&quot;) 
+            command as pure text, and just write the entire line on the page.<br>
+            ________________________________________<br>
+            <strong>Ending Statements With a Semicolon?</strong><br>
+            With traditional programming languages, like C++ and Java, each code 
+            statement has to end with a semicolon.<br>
+            Many programmers continue this habit when writing JavaScript, but 
+            in general, semicolons are optional! However, semicolons are required 
+            if you want to put more than one statement on a single line.<br>
+            ________________________________________<br>
+            <strong>How to Handle Older Browsers</strong><br>
+            Browsers that do not support JavaScript will display the script as 
+            page content. To prevent them from doing this, we may use the HTML 
+            comment tag:<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            &lt;!--<br>
+            document.write(&quot;Welcome to JavaScript!&quot;)<br>
+            //--&gt;<br>
+            &lt;/script&gt;<br>
+            The two forward slashes at the end of comment line (//) are a JavaScript 
+            comment symbol. This prevents the JavaScript compiler from compiling 
+            the line.<br>
+            *JavaScript Where To ...<br>
+            JavaScripts in the body section will be executed WHILE the page loads.<br>
+            JavaScripts in the head section will be executed when CALLED.<br>
+            Where to Put the JavaScript<br>
+            JavaScripts in a page will be executed immediately while the page 
+            loads into the browser. This is not always what we want. Sometimes 
+            we want to execute a script when a page loads, other times when a 
+            user triggers an event.<br>
+            Scripts in the head section: Scripts to be executed when they are 
+            called, or when an event is triggered, go in the head section. When 
+            you place a script in the head section, you will ensure that the script 
+            is loaded before anyone uses it. <br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            ....<br>
+            &lt;/script&gt;<br>
+            &lt;/head&gt;<br>
+            Scripts in the body section: Scripts to be executed when the page 
+            loads go in the body section. When you place a script in the body 
+            section it generates the content of the page.<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            ....<br>
+            &lt;/script&gt;<br>
+            &lt;/body&gt;<br>
+            Scripts in both the body and the head section: You can place an unlimited 
+            number of scripts in your document, so you can have scripts in both 
+            the body and the head section.<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            ....<br>
+            &lt;/script&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;script type=&quot;text/javascript&quot;&gt;<br>
+            ....<br>
+            &lt;/script&gt;<br>
+            &lt;/body&gt;</font> <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">________________________________________<br>
+              <strong>Using an External JavaScript</strong><br>
+              Sometimes you might want to run the same JavaScript on several pages, 
+              without having to write the same script on every page.<br>
+              To simplify this, you can write a JavaScript in an external file. 
+              Save the external JavaScript file with a .js file extension.<br>
+              Note: The external script cannot contain the &lt;script&gt; tag!<br>
+              To use the external script, point to the .js file in the &quot;src&quot; 
+              attribute of the &lt;script&gt; tag:<br>
+              &lt;html&gt;<br>
+              &lt;head&gt;<br>
+              &lt;script src=&quot;xxx.js&quot;&gt;&lt;/script&gt;<br>
+              &lt;/head&gt;<br>
+              &lt;body&gt;<br>
+              &lt;/body&gt;<br>
+              &lt;/html&gt;<br>
+              Note: Remember to place the script exactly where you normally would 
+              write the script!</font></p>
+         
+          </td>
+        </tr>
+        <tr bgcolor="#FBFBFB"> 
+          <td height="25" class="textsub"><!--DWLayoutEmptyCell-->&nbsp;</td>
+          <td height="25" class="textsub"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+            LEVEL 1 | <a href="_lesson_jscript2.php">LEVEL 2</a> |<a href="_lesson_jscript3.php"> 
+            LEVEL 3 </a>| <a href="_lesson_jscript4php">LEVEL 4</a> |<a href="_lesson_jscript5.php">LEVEL 
+            5</a> | <a href="_lesson_jscript6.%20php">LEVEL 6</a> |</font></td>
+        </tr>
+        <tr bgcolor="white"> 
+          <td>&nbsp;</td>
+          <td bgcolor="white">&nbsp;</td>
+        </tr>
+        <!-- BEGIN MODULEGROUP_BLOCK -->
+        <tr bgcolor="white"> 
+          <td><!--DWLayoutEmptyCell-->&nbsp;</td>
+          <td bgcolor="white"><!--DWLayoutEmptyCell-->&nbsp; </td>
+        </tr>
+        <!-- END MODULEGROUP_BLOCK -->
+      </table>
+    </td>
+    <td background="_images/bg_right.gif"></td>
+  </tr>
+  <tr>
+    <td height="16" valign="top"> <img src="_images/im_left_07.gif" width="16" height="16" alt=""></td>
+    <td background="_images/bg_bottom.gif" bgcolor="#EEEEEE"></td>
+    <td valign="top"> <img src="_images/im_left_09.gif" width="19" height="16" alt=""></td>
+  </tr>
+</table>
+</body>
+</html>

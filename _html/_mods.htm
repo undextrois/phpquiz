@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>ADMIN LIST</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.main {
+	FONT-SIZE: 11px; COLOR: #999999; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.button  {
+ border-right: #BCC0C5 1px solid;
+ border-top: #BCC0C5 1px solid;
+ font-size: 11px;
+ border-left: #BCC0C5 1px solid;
+ border-bottom: #BCC0C5 1px solid;
+ color: #5B5B5B;
+ font-family: tahoma;
+ background-color: #E0DFE3
+ }
+.mainblue {
+	FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.titleblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #009ade; FONT-FAMILY: Arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.textbox {
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	font-weight: normal; color: #000000; 
+	text-decoration: none;
+}
+.inputbox {
+	background-color: White; 
+	border: 1px solid #000000; 
+	color: #000000; 
+	font-family: Verdana,Arial,Helvetica; 
+	font-size: 8pt; 
+	text-align: left; 
+	scrollbar-face-color: #CCCCCC; 
+	scrollbar-shadow-color: #FFFFFF; 
+	scrollbar-highlight-color: #FFFFFF; 
+	scrollbar-3dlight-color: #FFFFFF; 
+	scrollbar-darkshadow-color: #FFFFFF; 
+	scrollbar-track-color: #FFFFFF; 
+	scrollbar-arrow-color: #000000 
+}
+</style>
+ <SCRIPT language="JavaScript">
+  function dateTime()
+{
+ var now = new Date()
+ var result = now.toLocaleString()
+ var tzOffset=-now.getTimezoneOffset()/60
+ if(tzOffset<0) result += " (GMT "+tzOffset+" hours)"
+ else result += " (GMT +"+tzOffset+" hours)"
+ return result
+}
+function tick()
+ {
+ document.forms[0].clock.value=dateTime()
+ setTimeout("tick()",1000)
+}
+  </SCRIPT>
+<script>
+
+/*
+Text Link/Image Map Tooltip Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, and 100's more DHTML scripts
+Visit http://www.dynamicdrive.com
+*/
+
+if (!document.layers&&!document.all&&!document.getElementById)
+event="test"
+function showtip(current,e,text){
+
+if (document.all||document.getElementById){
+thetitle=text.split('<br>')
+if (thetitle.length>1){
+thetitles=''
+for (i=0;i<thetitle.length;i++)
+thetitles+=thetitle[i]
+current.title=thetitles
+}
+else
+current.title=text
+}
+
+else if (document.layers){
+document.tooltip.document.write('<layer bgColor="white" style="border:1px solid black;font-size:12px;">'+text+'</layer>')
+document.tooltip.document.close()
+document.tooltip.left=e.pageX+5
+document.tooltip.top=e.pageY+5
+document.tooltip.visibility="show"
+}
+}
+function hidetip(){
+if (document.layers)
+document.tooltip.visibility="hidden"
+}
+
+</script>
+<div id="tooltip" style="position:absolute;visibility:hidden"></div>
+</head>
+
+<body>
+<br>
+<table width="95%" height="47" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td width="16" height="16" valign="top"> <img src="_images/im_left_01.gif" width="16" height="16" alt=""></td>
+    <td width="1136" background="_images/bg_top.gif"></td>
+    <td width="19" valign="top"> <img src="_images/im_left_03.gif" width="19" height="16" alt=""></td>
+  </tr>
+  <tr>
+    <td background="_images/bg_left.gif"> </td>
+    <td valign="top" bgcolor="#FFFFFF">
+      <table width="100%"  border="0" cellspacing="0" cellpadding="1">
+        <tr bgcolor="#FFFFFF">
+          <td width="42%" class="label"> <p class="titleblue">WEBOMANCER </p>
+            <p class="titleblue">Control Panel</p></td>
+          <td width="58%" align="right" class="label">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white">
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white">
+          <td colspan="2"> 
+		  <form name="form1" method="post" action="" ><input name="clock" type="text" class="TextAreaNoBorder" value="&{dateTime()};" size="60"></form> <SCRIPT LANGUAGE="JavaScript">
+tick()
+</SCRIPT> </td>
+        </tr>
+        <tr bgcolor="white">
+          <td colspan="2 " class="titleblue"> This section contains all the modulse 
+            for WEBOMANCER</td>
+        </tr>
+        <tr bgcolor="#FFFFFF">
+          <td colspan="2" class="textsub"><div align="center"><a href="_quiz.php" title="Quiz Home"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"></font></a><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"> 
+              | <a href="_addmods.php " title="Extended Functionality">ADD NEW MODULE</a> |<a href="_cpanel.php?action=home"  title="Quiz Home"> 
+<!-- _addmods.php -->
+              HOME </a> |</font></strong></div></td>
+        </tr>
+        <tr bgcolor="#FBFBFB">
+          <td height="20" colspan="2" bgcolor="#FFFFFF" class="titleblue">List 
+            of User </td>
+        </tr>
+        <tr bgcolor="white">
+          <td>&nbsp;</td>
+          <td bgcolor="white">&nbsp;</td>
+        </tr>
+        <tr bgcolor="white">
+          <td colspan="2"><table width="100%"  border="0" cellspacing="0" cellpadding="1">
+              <tr bgcolor="#F5F5F5" class="textsub"> 
+                <td width="2%" height="20" class="titleblue">Module ID</td>
+                <td width="21%" height="20" class="titleblue"> Modules</td>
+                <td width="58%" height="20" class="titleblue">Options</td>
+              </tr>
+              <tr> 
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+<!-- BEGIN _BLOCK -->
+              <tr bgcolor="#FCFCFC"> 
+                <td height="20" class="regulargrey"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{modidPK}</font></td>
+                <td height="20" class="regulargrey"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">{_mods}</font></td>
+                <td height="20"><span class="titleblue"><a href="_showmods.php?modidPK={modidPK}&action=view" class="linkmail">EDIT</a> 
+                  &nbsp;|&nbsp; <a href="_mods.php?modidPK={modidPK}&action=delete" class="linkmail">DELETE&nbsp;</a></span> 
+                  | <span class="titleblue"> <a href="_modlessons.php?modidPK={modidPK}&action=lessons" class="linkmail">LESSONS&nbsp;</a></span> 
+                  |</td>
+              </tr>
+<!-- END _BLOCK -->
+              <!--
+            <tr>
+              <td height="20">2</td>
+              <td height="20"> Company Name </td>
+              <td height="20">Arnel</td>
+              <td height="20"><a href="#" class="linkmail">Privileges</a> &nbsp;|&nbsp; <a href="#" class="linkmail">Edit Profile</a> &nbsp;|&nbsp; <a href="#" class="linkmail">View Users</a> &nbsp;| <a href="#" class="linkmail">&nbsp;Billing Info&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Delete&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Admin Password </a></td>
+            </tr>
+            <tr bgcolor="#FCFCFC">
+              <td height="20">3</td>
+              <td height="20"> Sysmatech </td>
+              <td height="20">Name</td>
+              <td height="20"><a href="#" class="linkmail">Privileges</a> &nbsp;|&nbsp; <a href="#" class="linkmail">Edit Profile</a> &nbsp;|&nbsp; <a href="#" class="linkmail">View Users</a> &nbsp;| <a href="#" class="linkmail">&nbsp;Billing Info&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Delete&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Admin Password </a></td>
+            </tr>
+            <tr>
+              <td height="20">4</td>
+              <td height="20"> Company Name </td>
+              <td height="20">Name</td>
+              <td height="20"><a href="#" class="linkmail">Privileges</a> &nbsp;|&nbsp; <a href="#" class="linkmail">Edit Profile</a> &nbsp;|&nbsp; <a href="#" class="linkmail">View Users</a> &nbsp;| <a href="#" class="linkmail">&nbsp;Billing Info&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Delete&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Admin Password </a></td>
+            </tr>
+            <tr bgcolor="#FCFCFC">
+              <td height="20">5</td>
+              <td height="20"> Company Name</td>
+              <td height="20">Name</td>
+              <td height="20"><a href="#" class="linkmail">Privileges</a> &nbsp;|&nbsp; <a href="#" class="linkmail">Edit Profile</a> &nbsp;|&nbsp; <a href="#" class="linkmail">View Users</a> &nbsp;| <a href="#" class="linkmail">&nbsp;Billing Info&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Delete&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Admin Password </a></td>
+            </tr>
+            <tr>
+              <td height="20">6</td>
+              <td height="20"> Company Name</td>
+              <td height="20">Name</td>
+              <td height="20"><a href="#" class="linkmail">Privileges</a> &nbsp;|&nbsp; <a href="#" class="linkmail">Edit Profile</a> &nbsp;|&nbsp; <a href="#" class="linkmail">View Users</a> &nbsp;| <a href="#" class="linkmail">&nbsp;Billing Info&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Delete&nbsp;</a> |&nbsp; <a href="#" class="linkmail">Admin Password </a></td>
+            </tr>
+-->
+            </table></td>
+        </tr>
+      </table>      
+    </td>
+    <td background="_images/bg_right.gif"></td>
+  </tr>
+  <tr>
+    <td height="16" valign="top"> <img src="_images/im_left_07.gif" width="16" height="16" alt=""></td>
+    <td background="_images/bg_bottom.gif" bgcolor="#EEEEEE"></td>
+    <td valign="top"> <img src="_images/im_left_09.gif" width="19" height="16" alt=""></td>
+  </tr>
+<input type="hidden" name="modidPK" value="{_modidPK}">
+</table>
+</body>
+</html>
