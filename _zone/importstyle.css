@@ -1,0 +1,41 @@
+.small { font-family: "Comic Sans MS",Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; vertical-align: baseline ; text-decoration: none}
+
+ol#numbered { list-style-position: outside; list-style-type: decimal; }
+
+.dshd { border: dashed 1px #000066 }
+
+p#hornav, { font-family: "Comic Sans MS",Arial, Helvetica, sans-serif; display: block; margin-left: 20px; padding: 6px 0px; white-space: nowrap; }
+p#hornav { text-align: right; float: right; }
+
+p#hornav, span#lnav,  p#lnav { font-family: "Comic Sans MS",Arial, Helvetica, sans-serif; padding: 6px 0px; white-space: nowrap; }
+p#hornav, p#lnav { display: block; }
+p#hornav { text-align: right; float: right; margin-left: 20px; }
+p#lnav { float: left; }
+p#hornav a, span#lnav a, p#lnav a { display: inline; margin: 2px 4px; padding: 1px 3px; font-weight: bold; font-size: 13px; color: #000066; border: solid #000066 1px; }
+p#hornav a:hover, span#lnav a:hover, p#lnav a:hover { background-color: #000066; color: #ffffff; }
+
+p#bignav { font-family: "Comic Sans MS",Arial, Helvetica, sans-serif; margin: 0px; padding: 6px 0px; font-family: "Comic Sans MS", Arial, Helvetica, sans-serif; font-size: 17px; }
+p#bignav a { margin: 2px 4px; padding: 2px 4px; font-weight: bold; color: #000066; border: solid #000066 1px; }
+p#bignav a:hover { background-color: #000066; color: #ffffff; }
+
+.rtali { float: right; margin-left: 20px }
+.drkred { color: #660000; font-style: oblique }
+.dhdbx { border: dashed 1px #000066; padding: 12px }
+
+table#lst { width: 90%; border-width: 0px; }
+table#lst caption { font-size: 18px; }
+table#lst th { text-align: left; font-size: 16px; }
+table#lst td { vertical-align: top; }
+
+table#qst { padding: 0px; margin: 0px; border-width: 0px }
+table#qst th { width: 45px; font-weight: normal; font-style: italic; text-align: right; vertical-align: top; padding: 0px }
+table#qst td { padding: 0px 9px 0px 0px }
+
+table#sct { border-width: 0px; font-size: 125%; padding: 0px; }
+table#sct tr { padding-bottom: 6px; }
+table#sct th { text-align: right; padding-right: 20px; white-space: nowrap; font-weight: bold; vertical-align: top; }
+
+table#nq { border-width: 0px; width: 95%; clear: both; }
+table#nq th { text-align: right; white-space: nowrap; vertical-align: top; width: 12em; }
+table#nq td { vertical-align: text-top; padding-left: 0.5em; }
+
